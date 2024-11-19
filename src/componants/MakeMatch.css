@@ -1,0 +1,226 @@
+/* Mapping Results Page Styling */
+.mapping-results-container {
+    background-color: rgba(2, 2, 2, 0.205);
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    padding: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mapping-results-header {
+    display: flex;
+    align-items: flex-start;
+    /* margin-bottom: 10px; */
+}
+
+.mapping-results-logo img {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.mapping-results-header h1 {
+    font-size: 32px;
+    color: #ffcc00;
+    margin-top: 80px;
+    margin-left: -166px;
+    white-space: nowrap; /* Prevent line breaks */
+  }
+
+.mapping-results-header p {
+    font-size: 18px;
+    color: #cccccc;
+    margin-top: 120px;
+    margin-left: -255px;
+    white-space: nowrap;
+
+}
+
+/* Total Records Section */
+.mapping-results-total-records {
+    background: linear-gradient(90deg, #ffcc00, #b38600);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+    display: inline-block;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Progress Bars */
+.mapping-results-progress-bars {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+.mapping-results-progress {
+    text-align: center;
+    width: 25%;
+}
+
+.mapping-results-progress-title {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.mapping-results-progress-percentage {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+    position: relative;
+    top: -25px;
+    left: 0;
+}
+
+.mapping-results-progress-bar {
+    background-color: #333333;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 12px;
+    margin-top: 8px;
+    position: relative;
+}
+
+.mapping-results-progress-fill {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.mapping-results-progress-bar .green-fill {
+    background-color: #00cc00;
+}
+
+.mapping-results-progress-bar .orange-fill {
+    background-color: #ff6600;
+}
+
+/* Match Results Section */
+.mapping-results-match-results {
+    background-color: #333333;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.mapping-results-match-overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.mapping-results-match-percentage{
+    background-color: #2a2a2a;
+    padding: 5px;
+    border-radius: 8px;
+    color: #ffcc00;
+    /* margin-bottom: 20px; */
+
+}
+.mapping-results-match-percentage span{
+    color: #cccccc;
+}
+
+.mapping-results-discrepancy{
+    background-color: #2a2a2a;
+    padding: 5px;
+    border-radius: 8px; 
+    color: #ffcc00;
+}
+.mapping-results-discrepancy span{
+    color: #cccccc;
+}
+
+/* Summary Section */
+.mapping-results-summary {
+    background-color: #2a2a2a;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.mapping-results-summary h3 {
+    font-size: 20px;
+    /* color: #ffcc00; */
+    margin-bottom: 10px;
+}
+
+.mapping-results-matched-makes li{
+    color: #ffcc00;
+
+}
+
+.mapping-results-unmatched-makes li{
+    color: #ffcc00;
+
+}
+
+.mapping-results-insights{
+    background-color: #2a2a2a;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.mapping-results-insights h3{
+    font-size: 20px;
+    /* color: #ffcc00; */
+    margin-bottom: 10px;
+
+}
+.mapping-results-insights li{
+    font-size: 14px;
+    color: #ffcc00;
+    /* margin-bottom: 10px; */
+
+}
+.mapping-results-insights h5{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+
+/* Button Styling */
+.mapping-results-correct-discrepancies-button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    margin: 30px auto 10px auto;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.3);
+}
+
+.mapping-results-correct-discrepancies-button:hover {
+    background-color: #e6b800;
+    transform: translateY(-2px);
+}
+
+.mapping-results-correct-discrepancies-button:active {
+    background-color: #cc9900;
+    transform: scale(0.98);
+}
+
+/* Footer */
+.mapping-results-footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #888888;
+}

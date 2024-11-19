@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* .commercial-vehicle-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    background-color: linear-gradient(to bottom right, #000000, #000000);
+    color: #ffffff;
+    min-height: 900vh;
+    padding: 20px;
+    box-sizing: border-box;
+} */
+
+.logo img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    text-align: left; /* Aligns heading to the left */
+    color: #ffffff;
+}
+
+.highlight {
+    color: #ffcc00;
+}
+
+p {
+    font-size: 1rem;
+    color: #d3d3d3;
+    text-align: left; /* Aligns paragraph to the left */
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Aligns options to the left */
+    margin-bottom: 30px;
+}
+
+.options input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #313136;
+    color: #ffffff;
+    border: 1px solid #555;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.options label:hover {
+    /* background-color: #ffcc00; */
+    border-color: #ffcc00;
+    color: #ffcc00;
+}
+
+.options input[type="radio"]:checked + label {
+    /* background-color: #ffcc00; */
+    color: #ffcc00;
+    border-color: #ffcc00;
+}
+
+.radio-inner-circle {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 2px solid #888;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    transition: border-color 0.2s;
+    position: relative;
+}
+
+.options label:hover .radio-inner-circle {
+    border-color: #ffcc00;
+}
+
+.options input[type="radio"]:checked + label .radio-inner-circle {
+    border-color: #ffcc00;
+}
+
+.options input[type="radio"]:checked + label .radio-inner-circle::after {
+    content: '';
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    background-color: #ffcc00;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.proceed-button {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    background-color: #ffcc00;
+    color: #1a1a2e;
+    border: none;
+    border-radius: 18px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    /* font-weight: bold; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 250px;
+}
+
+.proceed-button:disabled {
+    background-color: #313136;
+    color: #969494;
+    cursor: not-allowed;
+  }
+  
+  .proceed-button:hover:enabled {
+    background-color: #ffcc00;
+  }
+
+ /* Optional footer styling (currently commented out)
+footer {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #ffcc00;
+    color: #ffcc00;
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: center;
+} */

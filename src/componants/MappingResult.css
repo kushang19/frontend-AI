@@ -1,0 +1,189 @@
+.mapping-results {
+    background-color: #1a1a1a;
+    padding: 24px;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .mapping-results h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+  
+  .description {
+    color: #bbbbbb;
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  
+  .metrics-container {
+    background-color: rgba(40, 40, 40, 0.7);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 48px;
+  }
+  
+  .total-records {
+    background: linear-gradient(180deg, #FFD12E 0%, rgba(0, 0, 0, 0.5) 100%);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 180px;
+  }
+  
+  .total-records .label {
+    font-size: 14px;
+  }
+  
+  .total-records .value {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .metrics {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    padding: 10px;
+  }
+  
+  .metric {
+    flex: 1;
+  }
+  
+  .metric-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .percentage {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .progress-bar {
+    background-color: #444;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+  
+  .progress.green {
+    background: linear-gradient(90deg, #BAFFC1 0%, #06B217 100%);
+  }
+  
+  .progress.yellow {
+    background: linear-gradient(90deg, #FFBA88 0%, #FF6B00 100%);
+
+  }
+  
+  .progress.orange {
+    background: linear-gradient(90deg, #FFA500, #FF8C00);
+  }
+  
+  /* Mapping Steps */
+  .mapping-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .step-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .step.completed .step-circle {
+    background-color: #ffd700;
+    color: #000000;
+  }
+  
+  .step.active .step-circle {
+    background-color: #ffd700;
+    color: black;
+  }
+  
+  .step-connector {
+    width: 100px;
+    height: 2px;
+    background-color: #444;
+    margin: 0 8px;
+  }
+  
+  .step-text {
+    font-size: 14px;
+    color: #bbbbbb;
+    transition: color 0.3s ease;
+  }
+  
+  .step-text.yellow {
+    color: #ffd700;
+  }
+  
+  .step.final .step-circle {
+    background-color: #444;
+  }
+  
+  .step.final .step-circle.completed {
+    background-color: #228B22;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .metrics-container {
+      flex-direction: column;
+    }
+  
+    .total-records {
+      text-align: center;
+    }
+  
+    .mapping-steps {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .step-connector {
+      width: 50px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .step-connector {
+      display: none;
+    }
+    
+    .mapping-steps {
+      flex-direction: column;
+    }
+  }
