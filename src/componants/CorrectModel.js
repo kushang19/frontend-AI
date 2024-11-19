@@ -141,7 +141,7 @@ const VehicleMatchingDashboard = () => {
         <div className="footer">
           <span className="pagination-info">Showing Results 1-7 of 100</span>
           <button className="action-button" onClick={handleProceed}>
-            Correct Discrepancies →
+          Proceed To Variant Mapping →
           </button>
         </div>
       </div>

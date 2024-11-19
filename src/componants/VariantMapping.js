@@ -47,7 +47,7 @@ const VehicleMatchingDashboard = () => {
         totalRecords={794}
         mappingData={{
           make: { percentage: 100, status: "completed"},
-          model: { percentage: 100, status: "active" },
+          model: { percentage: 97, status: "active" },
           variant: { percentage: 73, status: "pending" },
         }}
         currentStep={3}
@@ -58,11 +58,11 @@ const VehicleMatchingDashboard = () => {
           <div className="stats">
             <div className="stat-item">
               <span className="stat-label">OVERALL MATCH PERCENTAGE</span>
-              <span className="stat-value match">80%</span>
+              <span className="stat-value match">73%</span>
             </div>
             <div className="stat-item">
               <span className="stat-label">DISCREPANCY</span>
-              <span className="stat-value discrepancy">20%</span>
+              <span className="stat-value discrepancy">27%</span>
             </div>
           </div>
 

@@ -59,11 +59,11 @@ const VehicleMatchingDashboard = () => {
           <div className="stats">
             <div className="stat-item">
               <span className="stat-label">OVERALL MATCH PERCENTAGE</span>
-              <span className="stat-value match">97%</span>
+              <span className="stat-value match">81%</span>
             </div>
             <div className="stat-item">
               <span className="stat-label">DISCREPANCY</span>
-              <span className="stat-value discrepancy">3%</span>
+              <span className="stat-value discrepancy">19%</span>
             </div>
           </div>
 
