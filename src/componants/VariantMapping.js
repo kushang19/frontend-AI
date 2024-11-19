@@ -47,7 +47,7 @@ const VehicleMatchingDashboard = () => {
         totalRecords={794}
         mappingData={{
           make: { percentage: 100, status: "completed"},
-          model: { percentage: 97, status: "active" },
+          model: { percentage: 100, status: "completed" },
           variant: { percentage: 73, status: "pending" },
         }}
         currentStep={3}
