@@ -1,0 +1,27 @@
+.mapping-results-header {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0 30px;
+}
+
+.mapping-results-logo img {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.mapping-results-header h1 {
+    font-size: 32px;
+    color: #ffcc00;
+    margin-top: 80px;
+    margin-left: -166px;
+    white-space: nowrap; /* Prevent line breaks */
+  }
+
+.mapping-results-header p {
+    font-size: 18px;
+    color: #cccccc;
+    margin-top: 120px;
+    margin-left: -255px;
+    white-space: nowrap;
+
+}

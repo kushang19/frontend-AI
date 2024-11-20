@@ -45,7 +45,7 @@ function LoginPage() {
         <h2>Welcome, Please Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="input-group">
-            <FaUser className="icon" />
+            {/* <FaUser className="icon" /> */}
             <input
               type="text"
               name="email" // Set name attribute for the email input
@@ -56,7 +56,7 @@ function LoginPage() {
             />
           </div>
           <div className="input-group">
-            <FaLock className="icon" />
+            {/* <FaLock className="icon" /> */}
             <input
               type="password"
               name="password" // Set name attribute for the password input

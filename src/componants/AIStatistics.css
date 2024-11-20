@@ -1,0 +1,13 @@
+.ai-container{
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+
+.top-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mid-wrap{
+    margin: 48px 0;
+}

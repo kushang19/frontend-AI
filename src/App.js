@@ -17,6 +17,7 @@ import ModelMapping from './componants/ModelMapping';
 import VariantMapping from './componants/VariantMapping';
 import CorrectModel from './componants/CorrectModel';
 import CorrectVariant from './componants/CorrectVariant';
+import AIStatistics from './componants/AIStatistics';
 
 
 
@@ -41,6 +42,7 @@ function App() {
         <Route path='/CorrectModel' element={<CorrectModel/>}/>
         <Route path='/VariantMapping' element={<VariantMapping/>}/>
         <Route path='/CorrectVariant' element={<CorrectVariant/>}/>
+        <Route path='/AIStatistics' element={<AIStatistics/>}/>
       </Routes>
     </Router>
   );

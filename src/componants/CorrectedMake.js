@@ -3,11 +3,15 @@ import { useNavigate } from "react-router-dom";
 import "./CorrectedMake.css";
 import logo from '../logo.svg';
 import MappingResults from "./MappingResult";
+import Header from "./Header"
+import Footer from "./Footer"
 
 const CorrectedMake = () => {
   const navigate = useNavigate();
-  const [data, setData] = useState(null);
+
   const [isLoading, setIsLoading] = useState(false);
+  const [loadingPercent, setLoadingPercent] = useState(0); // Add state for progress
+  const [data, setData] = useState(null)
 
   useEffect(() => {
     // Simulating a backend fetch call
@@ -53,40 +57,37 @@ const CorrectedMake = () => {
     fetchData();
   }, []);
 
+
   const handleProceed = () => {
-    setIsLoading(true); // Show loader
-    setTimeout(() => {
-      navigate("/ModelMapping"); // Simulate a navigation delay
-      window.scrollTo(0,0);
-    }, 2000); // Adjust delay as needed
+    setIsLoading(true); // Set loading to true when button is clicked
+    let progress = 0;
+
+    // Simulate loading process with an interval
+    const loadingInterval = setInterval(() => {
+      if (progress < 100) {
+        progress += 10;
+        setLoadingPercent(progress); // Update the loading progress
+      } else {
+        clearInterval(loadingInterval); // Stop the interval when loading is complete
+        navigate("/ModelMapping"); // Change '/another-page' to your target route
+        window.scrollTo(0,0);
+      }
+    }, 300); // Simulate loading every 500ms
   };
 
-  const getProgressColor = (percentage) => {
-    if (percentage < 50) return "red";
-    if (percentage >= 50 && percentage <= 70) return "orange";
-    return "green";
-  };
-
-  if (isLoading) {
-    return (
-      <div className="loader-container">
-        <div className="spinner"></div>
-        <div className="loading-percent">Please Wait...</div>
-      </div>
-    );
-  }
-
-  if (!data) {
-    return <div className="loading">Please Wait...</div>;
-  }
 
   return (
     <div className="mapping-results-container">
-      <header className="header">
-        <div className="logo">
-          <img src={logo} alt="Quantique Logo" />
-        </div>
-      </header>
+      {isLoading ? (
+        <div className="loader-container">
+        <div className="spinner"></div>
+        <div className="loading-percent">{loadingPercent}%</div>
+        <div className="loading-text">Loading.....Please Wait</div>
+      </div>
+      ) : 
+      (
+        <>
+        <Header />
 
       <main>
         {/* <h1 className="title">Mapping Results</h1>
@@ -166,10 +167,9 @@ const CorrectedMake = () => {
           Proceed To Model Mapping
         </button>
       </main>
-
-      <footer className="footer">
-        Copyright © QuantiqueMetadata 2024. All rights reserved.
-      </footer>
+        </>
+      )}
+        <Footer />
     </div>
   );
 };

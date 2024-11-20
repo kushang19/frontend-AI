@@ -75,7 +75,7 @@
   
   .search-icon {
     position: absolute;
-    left: 12px;
+    left: 215px;
     top: 50%;
     transform: translateY(-50%);
     color: #666;
@@ -104,17 +104,17 @@
     overflow: hidden;
   }
   
-  .table-header {
+  .table-header.varaint-mapping {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 16px;
     background: linear-gradient(to right, rgba(255, 215, 0, 0.2), transparent);
     font-weight: bold;
   }
   
-  .table-row {
+  .table-row.varaint-mapping {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 16px;
     background-color: #333;
     margin-bottom: 2px;
