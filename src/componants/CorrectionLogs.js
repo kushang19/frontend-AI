@@ -1,8 +1,6 @@
 import React from 'react';
 import './CorrectionLogs.css';
 
-
-
 const CorrectionLogs = () => {
   const data = [
     {
@@ -56,7 +54,21 @@ const CorrectionLogs = () => {
   ];
   return (
     <div className="correction-logs-container">
+      <div className='correction-logs-head'>
       <h1>Correction Logs</h1>
+      <div className='download-btn' >
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_160_7773)">
+          <path d="M2 12.3408H4V17.3408H20V12.3408H22V17.3408C22 18.4508 21.11 19.3408 20 19.3408H4C2.9 19.3408 2 18.4508 2 17.3408V12.3408ZM12 15.3408L17.55 9.88082L16.13 8.47082L13 11.5908V2.34082H11V11.5908L7.88 8.47082L6.46 9.89082L12 15.3408Z" fill="white"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_160_7773">
+          <rect width="24" height="24" fill="white" transform="translate(0 0.34082)"/>
+          </clipPath>
+          </defs>
+        </svg>
+      </div>
+      </div>
       <div className='head-wrap'>
       <div className="search-bar">
         <input type="text" placeholder="Search" className="search-input" />

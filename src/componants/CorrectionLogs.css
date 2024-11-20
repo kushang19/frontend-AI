@@ -21,9 +21,13 @@
   .search-button {
     background-color: #444;
     color: #fff;
-    padding: 10px;
+    padding: 8px;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .download-btn{
     cursor: pointer;
   }
   
@@ -92,5 +96,13 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+  }
+
+  .correction-logs-head{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
   }
   
