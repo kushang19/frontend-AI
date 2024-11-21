@@ -108,7 +108,7 @@ const MakeMatch = ({
                 <p>
                   {matchedMakes.length > 0
                     ? matchedMakes.join(", ")
-                    : "HERO (23%), HONDA (19%), TVS (27%), BAJAJ (21%), YAMAHA (13%), SUZUKI (9%), ROYAL ENFIELD (17%), KTM (8%), VESPA (2%), JAWA (3%)."}
+                    : "HERO (17%), HONDA (11%), TVS (13%), BAJAJ (8.3%), YAMAHA (10.7%), SUZUKI (9.1%), ROYAL ENFIELD (6%), KTM (8%), VESPA (2%), JAWA (2.9%)."}
                 </p>
               </div>
               <div className="mapping-results-unmatched-makes">
@@ -116,7 +116,7 @@ const MakeMatch = ({
                 <p>
                   {unmatchedMakes.length > 0
                     ? unmatchedMakes.join(", ")
-                    : "Heron (5.1%), YAMAHAA (3%)......."}
+                    : "Heron (5.1%), YAMAHAA (2.3%)......."}
                 </p>
               </div>
             </div>

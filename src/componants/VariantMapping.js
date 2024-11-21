@@ -10,32 +10,32 @@ const VehicleMatchingDashboard = () => {
     {
       make: "HONDA",
       models: "ACTIVA",
-      variant: "Activa 125, Activa 6G, Activa i",
-      score: "95%",
+      variant: "Activa 125s, Activa 6G, Activa iI",
+      score: "71%",
     },
     {
       make: "HERO",
       models: "PASSION PRO",
-      variant: "Passion Pro BS6, Passion Pro Xtec",
-      score: "100%",
+      variant: "Passion Pro BS6e, Passion Pro Xtech",
+      score: "67%",
     },
     {
       make: "TVS",
       models: " JUPITER",
-      variant: "Jupiter Classic, Jupiter ZX, Jupiter SmartXonnect",
-      score: "100%",
+      variant: "Jupiter Classice, Jupiter ZX, Jupiter SmartXonect",
+      score: "74%",
     },
     {
       make: "BAJAJ",
       models: "PULSAR",
-      variant: "Pulsar NS160, Pulsar 150 Neon, Pulsar RS200",
-      score: "100%",
+      variant: "Pulsar NS160, Pulsar 150 Non, Pulsar R200",
+      score: "68.2%",
     },
     {
       make: "YAMAHA",
       models: "RAY ZR",
-      variant: "Ray ZR Street Rally, Ray ZR 125 Fi",
-      score: "100%",
+      variant: "Ray ZR Streat Rally, Ray ZR 125 F",
+      score: "71.3%",
     },
   ];
 
@@ -126,8 +126,8 @@ const VehicleMatchingDashboard = () => {
               <div className="vehicle-table">
                 <div className="table-header varaint-mapping">
                   <div>Vehicle Make</div>
-                  <div>Vehicle Model/s</div>
-                  <div>Vehicle Variant/s</div>
+                  <div>Vehicle Models</div>
+                  <div>Vehicle Variants</div>
                   <div>Score</div>
                 </div>
 
@@ -148,14 +148,13 @@ const VehicleMatchingDashboard = () => {
                 <div className="card">
                   <h2 className="card-title">Summary</h2>
                   <div className="card-content">
-                    <h3 className="section-title">Matched Models</h3>
+                    <h3 className="section-title">Matched Variant</h3>
                     <p className="section-text">
-                      3015 TT (20%), MAV (6X2) (18%), 1920 (15%), 2670 (12%),
-                      2690 (10%), 3670 (8%)
+                    Activa 6G, Jupiter ZX, Pulsar NS160,MT15 Version 2.0,Platina 110 H-Gear......
                     </p>
 
-                    <h3 className="section-title">Un-Matched Models</h3>
-                    <p className="section-text">3970 (3%)</p>
+                    <h3 className="section-title">Un-Matched Variant</h3>
+                    <p className="section-text">Activa 125s, Activa iI, Passion Pro BS6e, Passion Pro Xtech,Jupiter Classice......</p>
                   </div>
                 </div>
 
@@ -164,7 +163,7 @@ const VehicleMatchingDashboard = () => {
                   <div className="card-content">
                     <h3 className="section-title">Reason For Discrepancy</h3>
                     <p className="section-text">
-                      • No Such Model ("3970") Found.
+                      • No Such Variant ("Activa 125s, Activa iI, Passion Pro BS6e, Passion Pro Xtech,Jupiter Classice......") Found.
                     </p>
 
                     <h3 className="section-title">Actionable Insights</h3>
@@ -177,7 +176,6 @@ const VehicleMatchingDashboard = () => {
             {/* Footer */}
             <div className="footer">
               <span className="pagination-info">
-                Showing Results 1-7 of 100
               </span>
               <button className="action-button" onClick={handleProceed}>
                 Correct Discrepancies →

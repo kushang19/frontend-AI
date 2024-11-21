@@ -10,8 +10,8 @@ const VehicleMatchingDashboard = () => {
     {
       make: "HONDA",
       models:
-        "ACTIVA (30%), DIO (25%), CB SHINE (20%), HORNET (15%), UNICORN (10%)",
-      score: "95%",
+        "ACTIVA, DIO, CB SHINE, HORNET, UNICORN",
+      score: "100%",
     },
     {
       make: "HERO",
@@ -142,19 +142,26 @@ const VehicleMatchingDashboard = () => {
                 <div className="card-content">
                   <h3 className="section-title">Matched Models</h3>
                   <p className="section-text">
-                    3015 TT (20%), MAV (6X2) (18%), 1920 (15%), 2670 (12%), 2690
-                    (10%), 3670 (8%)
+                  FZ, R15, MT15,CT100,ACTIVA, DIO,PLATINA,GLAMOUR,CB SHINE........
                   </p>
   
                   <h3 className="section-title">Un-Matched Models</h3>
-                  <p className="section-text">3970 (3%)</p>
+                  <p className="section-text">All Matched</p>
                 </div>
               </div>
   
               <div className="card">
                 <h2 className="card-title">Corrected Entries</h2>
                 <div className="card-content">
-                  <p className="section-text">81% → 97%</p>
+                  <p className="section-text">ACTIVIA
+                  →
+                ACTIVA,
+                DUO
+                  →
+                DIO, 
+                PASSION PRO PRO
+                  →
+                PASSION PRO.......</p>
                 </div>
               </div>
             </div>
@@ -162,7 +169,7 @@ const VehicleMatchingDashboard = () => {
   
           {/* Footer */}
           <div className="footer">
-            <span className="pagination-info">Showing Results 1-7 of 100</span>
+            <span className="pagination-info"></span>
             <button className="action-button" onClick={handleProceed}>
               Proceed To Variant Mapping →
             </button>

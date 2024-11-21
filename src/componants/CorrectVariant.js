@@ -11,7 +11,7 @@ const VehicleMatchingDashboard = () => {
       make: "HONDA",
       models: "ACTIVA",
       variant: "Activa 125, Activa 6G, Activa i",
-      score: "95%",
+      score: "98%",
     },
     {
       make: "HERO",
@@ -29,7 +29,7 @@ const VehicleMatchingDashboard = () => {
       make: "BAJAJ",
       models: "PULSAR",
       variant: "Pulsar NS160, Pulsar 150 Neon, Pulsar RS200",
-      score: "100%",
+      score: "89%",
     },
     {
       make: "YAMAHA",
@@ -83,7 +83,7 @@ const VehicleMatchingDashboard = () => {
           mappingData={{
             make: { percentage: 100, status: "completed"},
             model: { percentage: 100, status: "active" },
-            variant: { percentage: 85, status: "pending" },
+            variant: { percentage: 90.2, status: "pending" },
           }}
           currentStep={3}
         />
@@ -93,11 +93,11 @@ const VehicleMatchingDashboard = () => {
             <div className="stats">
               <div className="stat-item">
                 <span className="stat-label">OVERALL MATCH PERCENTAGE</span>
-                <span className="stat-value match">85%</span>
+                <span className="stat-value match">90.2%</span>
               </div>
               <div className="stat-item">
                 <span className="stat-label">DISCREPANCY</span>
-                <span className="stat-value discrepancy">15%</span>
+                <span className="stat-value discrepancy">9.8%</span>
               </div>
             </div>
   
@@ -130,8 +130,8 @@ const VehicleMatchingDashboard = () => {
             <div className="vehicle-table">
               <div className="table-header varaint-mapping">
                 <div>Vehicle Make</div>
-                <div>Vehicle Model/s</div>
-                <div>Vehicle Variant/s</div>
+                <div>Vehicle Models</div>
+                <div>Vehicle Variants</div>
                 <div>Score</div>
               </div>
   
@@ -152,14 +152,13 @@ const VehicleMatchingDashboard = () => {
               <div className="card">
                 <h2 className="card-title">Summary</h2>
                 <div className="card-content">
-                  <h3 className="section-title">Matched Models</h3>
+                  <h3 className="section-title">Matched Variant</h3>
                   <p className="section-text">
-                    3015 TT (20%), MAV (6X2) (18%), 1920 (15%), 2670 (12%), 2690
-                    (10%), 3670 (8%)
+                  Activa 6G, Jupiter ZX, Pulsar NS160,MT15 Version 2.0,Platina 110 H-Gear......
                   </p>
   
-                  <h3 className="section-title">Un-Matched Models</h3>
-                  <p className="section-text">3970 (3%)</p>
+                  <h3 className="section-title">Un-Matched Variant</h3>
+                  <p className="section-text">Some Variants have not matched</p>
                 </div>
               </div>
   
@@ -167,9 +166,15 @@ const VehicleMatchingDashboard = () => {
                 <h2 className="card-title">Corrected Entries</h2>
                 <div className="card-content">
                   <p className="section-text">
-                    73%
+                  Activa 125s
                     →
-                    85%
+                  Activa 125,
+                  Activa iI
+                    →
+                    Activa i,
+                    Passion Pro BS6e
+                    →
+                    Passion Pro BS6
                   </p>
                 </div>
               </div>
@@ -178,7 +183,7 @@ const VehicleMatchingDashboard = () => {
   
           {/* Footer */}
           <div className="footer">
-            <span className="pagination-info">Showing Results 1-7 of 100</span>
+            <span className="pagination-info"></span>
             <button className="action-button" onClick={handleProceed}>Correct Discrepancies →</button>
           </div>
         </div>

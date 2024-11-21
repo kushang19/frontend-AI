@@ -9,28 +9,28 @@ const VehicleMatchingDashboard = () => {
   const vehicleData = [
     {
       make: "HONDA",
-      models: "ACTIVA (30%), DIO (25%), CB SHINE (20%), HORNET (15%), UNICORN (10%)",
-      score: "95%",
+      models: "ACTIVIA, DUO, CB SHINE, HARNET, UNICARN",
+      score: "81%",
     },
     {
       make: "HERO",
-      models: "SPLENDOR, PASSION PRO, XPULSE 200, GLAMOUR, HF DELUXE",
-      score: "100%",
+      models: "SPLENDER, PASSION PRO PRO, XPLUSE 200, GLAMOUR, HF CD DELUXE",
+      score: "72%",
     },
     {
       make: "TVS",
-      models: "APACHE RTR, JUPITER, NTORQ, XL100, ZEST",
-      score: "100%",
+      models: "APACHE RTR, JUPYTER, NTORQE, XL100, ZEST",
+      score: "83%",
     },
     {
       make: "BAJAJ",
-      models: "PULSAR, AVENGER, CT100, DOMINAR, PLATINA",
-      score: "100%",
+      models: "PULSER, AVENGAR, CT100, DOMINOR, PLATINA",
+      score: "79%",
     },
     {
       make: "YAMAHA",
-      models: "FZ, R15, MT15, FASCINO, RAY ZR",
-      score: "100%",
+      models: "FZ, R15, MT15, FASSINO, RAYE ZR",
+      score: "82%",
     },
   ];
   const navigate = useNavigate();
@@ -142,12 +142,11 @@ const VehicleMatchingDashboard = () => {
                 <div className="card-content">
                   <h3 className="section-title">Matched Models</h3>
                   <p className="section-text">
-                    3015 TT (20%), MAV (6X2) (18%), 1920 (15%), 2670 (12%), 2690
-                    (10%), 3670 (8%)
+                  FZ, R15, MT15, CT100, PLATINA, GLAMOUR, CB SHINE .........
                   </p>
   
                   <h3 className="section-title">Un-Matched Models</h3>
-                  <p className="section-text">3970 (3%)</p>
+                  <p className="section-text">ACTIVIA, DUO, HARNET, UNICARN, SPLENDER ......</p>
                 </div>
               </div>
   
@@ -155,7 +154,7 @@ const VehicleMatchingDashboard = () => {
                 <h2 className="card-title">Insights</h2>
                 <div className="card-content">
                   <h3 className="section-title">Reason For Discrepancy</h3>
-                  <p className="section-text">• No Such Model ("3970") Found.</p>
+                  <p className="section-text">• No Such Model ("ACTIVIA, DUO, HARNET, UNICARN, SPLENDER ......") Found.</p>
   
                   <h3 className="section-title">Actionable Insights</h3>
                   <p className="section-text">• Verify Data Source</p>
@@ -166,7 +165,7 @@ const VehicleMatchingDashboard = () => {
   
           {/* Footer */}
           <div className="footer">
-            <span className="pagination-info">Showing Results 1-7 of 100</span>
+            <span className="pagination-info"></span>
             <button className="action-button" onClick={handleProceed}>Correct Discrepancies →</button>
           </div>
         </div>

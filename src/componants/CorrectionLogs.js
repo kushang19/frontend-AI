@@ -1,62 +1,77 @@
 import React from 'react';
 import './CorrectionLogs.css';
-
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+// import { Download } from 'lucide-react';
+ 
 const CorrectionLogs = () => {
   const data = [
     {
       srNo: 1,
-      vehicleName: "ASTON MARTIN DB11 V12",
+      vehicleName: "HONDA Activa 125",
       discrepancyIn: "Variant",
-      beforeCorrection: "DB11 V10",
-      afterCorrection: "DB11 V12",
-      vehicleMasterId: "2200001"
+      beforeCorrection: "Activa 125s",
+      afterCorrection: "Activa 125",
+      vehicleMasterId: "Q2200001"
     },
     {
       srNo: 2,
-      vehicleName: "ASTON MARTIN DB11 V8",
+      vehicleName: "AHONDA Activa i",
       discrepancyIn: "Variant",
-      beforeCorrection: "DB11 V11",
-      afterCorrection: "DB11 V8",
-      vehicleMasterId: "2200002"
+      beforeCorrection: "HONDA Activa iI",
+      afterCorrection: "HONDA Activa i",
+      vehicleMasterId: "Q2200002"
     },
     {
       srNo: 3,
-      vehicleName: "ASTON MARTIN VANTAGE COUPE",
-      discrepancyIn: "None",
-      beforeCorrection: "--",
-      afterCorrection: "--",
-      vehicleMasterId: "2200003"
+      vehicleName: "HERO Splendor Plus",
+      discrepancyIn: "Make",
+      beforeCorrection: "Heron",
+      afterCorrection: "HERO",
+      vehicleMasterId: "Q2200003"
     },
     {
       srNo: 4,
-      vehicleName: "ASTON MARTIN VANTAGE ROADS",
-      discrepancyIn: "None",
-      beforeCorrection: "--",
-      afterCorrection: "--",
-      vehicleMasterId: "2200004"
+      vehicleName: "HONDA Activa 6G",
+      discrepancyIn: "Model",
+      beforeCorrection: "ACTIVIA",
+      afterCorrection: "ACTIVA",
+      vehicleMasterId: "Q2200004"
     },
     {
       srNo: 5,
-      vehicleName: "ASTON MARTIN RAPIDE S",
-      discrepancyIn: "None",
-      beforeCorrection: "--",
-      afterCorrection: "--",
-      vehicleMasterId: "2200005"
+      vehicleName: "YAMAHA MT15 Version 2.0",
+      discrepancyIn: "Make",
+      beforeCorrection: "YAMAHAA",
+      afterCorrection: "YAMAHA",
+      vehicleMasterId: "Q2200005"
     },
     {
       srNo: 6,
-      vehicleName: "ASTON MARTIN RAPIDE AMR",
+      vehicleName: "HERO Passion Pro BS6",
       discrepancyIn: "None",
-      beforeCorrection: "--",
-      afterCorrection: "--",
-      vehicleMasterId: "2200006"
+      beforeCorrection: "Passion Pro BS6e",
+      afterCorrection: "Passion Pro BS6",
+      vehicleMasterId: "Q2200006"
     }
   ];
+ 
+  const downloadHandler = () => {
+    toast.success("Your file is being downloaded!", {
+      position: "bottom-right",
+      autoClose: 3000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+    });
+  };
+ 
   return (
     <div className="correction-logs-container">
       <div className='correction-logs-head'>
       <h1>Correction Logs</h1>
-      <div className='download-btn' >
+      <div className='download-btn' onClick={downloadHandler} >
         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_160_7773)">
           <path d="M2 12.3408H4V17.3408H20V12.3408H22V17.3408C22 18.4508 21.11 19.3408 20 19.3408H4C2.9 19.3408 2 18.4508 2 17.3408V12.3408ZM12 15.3408L17.55 9.88082L16.13 8.47082L13 11.5908V2.34082H11V11.5908L7.88 8.47082L6.46 9.89082L12 15.3408Z" fill="white"/>
@@ -69,6 +84,7 @@ const CorrectionLogs = () => {
         </svg>
       </div>
       </div>
+      <ToastContainer />
       <div className='head-wrap'>
       <div className="search-bar">
         <input type="text" placeholder="Search" className="search-input" />
@@ -130,5 +146,5 @@ const CorrectionLogs = () => {
     </div>
   );
 };
-
+ 
 export default CorrectionLogs;
